@@ -1,0 +1,18 @@
+Package: SWA
+Type: Package
+Title: A package to assist in devloping SEM metrics based on driver data
+Version: 0.1
+Date: 2021-09-01
+Authors@R: c(person("notsynonymous", "Declerk S.", email = "sam@engineer.com", role = c("cre","aut")))
+Maintainer: Samuel MDC <sam@engineer.com>
+URL: https://github.com/notsynonymous/SWA
+BugReports: https://github.com/notsynonymous/SWA/issues
+Description: SWA package for Amazon Metrics
+Depends: R (>= 4.1.1)
+Imports: readxl
+Suggests: ggplot2
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+VignetteBuilder: knitr
