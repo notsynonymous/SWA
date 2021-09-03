@@ -1,3 +1,27 @@
+#' Reads Manifests to Frequency Tablouse
+#' Takes a file of manifests and transforms it into a a stop frequency table. This is really interesting because it is likely one of the more useful things to ever happen to Jeff Bezos, and he's never really going to give a fuck about that.
+#' 
+#' @name read_whole_folder_RTW
+#' @author the Blousy Girl from accounts receivable
+#'
+#' @param files a vector of type string that contains the station name
+#' @param ext a vector object of length 1 that contains the object name extension -- this will also be passed to the filename along with a timestample.
+#'
+#' @returns None
+#' 
+#' @examples
+#' \code # 
+#' \code # set the current working directory to a folder with XLS files in it
+#' \code # this code is in a block comment because it requires a XLS files
+#' \code # NOTRUN {
+#' \code # setwd(PATH_TO_FOLDER)
+#' \code # fileNames <- list.files()
+#' \code # read_whole_folder_RTW(fileNames, "ALL")
+#' \code # ls()
+#' \code # }
+#' @export
+#' @md
+
 read_whole_folder_RTW <- function(files, ext, writeEachStation=FALSE) {
 
 	tmp_obj <- NULL
