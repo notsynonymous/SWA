@@ -20,8 +20,9 @@ This function looks for particular character sets in a string pulled from the fi
 It is used recursively with getTable and read_whole_folder_RTW, for more information, please refer to the documentation for those functions
 }
 \examples{
-\code DLA7.mat <- getTable("DLA7")
-\code DLA7.mat
+\dontrun{DLA7.mat <- getTable("DLA7")
+DLA7.mat
+}
 }
 \seealso{
 \code{\link[=read_whole_folder_RTW]{read_whole_folder_RTW()}}

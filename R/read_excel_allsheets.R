@@ -10,19 +10,14 @@
 #' @returns None
 #' 
 #' @examples
-#' \code # set the current working directory to a folder with an XLS file in it
-#' \code # this code is in a block comment because it requires an XLS file
-#' \code # NOTRUN {
-#' \code #	setwd(PATH_TO_FOLDER)
-#' \code # }
-#' \code # read_excel_allshets(filename)
-#' \code # ls()
+#' \dontrun{
+#' setwd(PATH_TO_FOLDER)
+#' read_excel_allshets(filename)
+#' }
 #' @export
 #' @md
 
-require(readxl)
 read_excel_allsheets <- function(filename, tibble = FALSE) {
-	print("Created by Jeromy Anglim")
     sheets <- readxl::excel_sheets(filename)
     x <- lapply(sheets, function(X) readxl::read_excel(filename, sheet = X))
     if(!tibble) x <- lapply(x, as.data.frame)

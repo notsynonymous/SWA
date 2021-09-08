@@ -18,10 +18,10 @@ Takes the string "dat" and pastes an index
 This function is mostly a DRY private function that helps generate the name of dataframes
 }
 \examples{
-\code num <- c(1,2,3,4,5)
-\code for(i in 1:length(num)){
-\code 	
-\code		assign(name_func(i), i)
-\code }
-\code ls()
+num <- c(1,2,3,4,5)
+for(i in 1:length(num)){
+ 	
+	assign(name_func(i), i)
+}
+ls()
 }

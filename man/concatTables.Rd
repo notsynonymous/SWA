@@ -11,7 +11,7 @@ concatTables(stations, viewTable = FALSE, writeFile = FALSE)
 \arguments{
 \item{stations}{a vector of type string containing the names of stations}
 
-\item{viewTable}{a logical argument that will display the output of the generated table, if \code viewTable=TRUE, concatTables will print the table}
+\item{viewTable}{a logical argument that will display the output of the generated table, TRUE, concatTables will print the table}
 
 \item{writeFile}{a logical arugment that will write the file to the data folder included in the SWA portable designed for Amazon.}
 }
@@ -24,10 +24,10 @@ This function looks for particular character sets in a string pulled from the fi
 It is used recursively with getTable and read_whole_folder_RTW, for more information, please refer to the documentation for those functions
 }
 \examples{
-\code stationNames <- c("DLA7", "DPS1")
-\code weekStopFreq <- concatTable(stationNames, TRUE)
-\code # This generates a table when RTW files are placed in the RTW folder of the R for Amazon portable.
+\dontrun{
+dir <- paste0(paste0("C:/Users/", Sys.getenv("USERNAME")), "/Documents/R/WD/RTW")
+setwd(dir)
+stationNames <- c("DLA7", "DPS1")
+weekStopFreq <- concatTables(stationNames, TRUE)
 }
-\seealso{
-\code{\link[=getTable]{getTable()}}, \code{\link[=read_whole_folder_RTW]{read_whole_folder_RTW()}}
 }

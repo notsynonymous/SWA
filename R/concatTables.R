@@ -4,20 +4,20 @@
 #' @name concatTables
 #' 
 #' @param stations a vector of type string containing the names of stations
-#' @param viewTable a logical argument that will display the output of the generated table, if \code viewTable=TRUE, concatTables will print the table
+#' @param viewTable a logical argument that will display the output of the generated table, TRUE, concatTables will print the table
 #' @param writeFile a logical arugment that will write the file to the data folder included in the SWA portable designed for Amazon.
 #'
 #' @returns dataframe of generated stop frequency by station
 #' 
-#' @seealso [SWA::getTable()], [SWA::read_whole_folder_RTW()]
-#'
 #' @examples
-#' \code stationNames <- c("DLA7", "DPS1")
-#' \code weekStopFreq <- concatTable(stationNames, TRUE)
-#' \code # This generates a table when RTW files are placed in the RTW folder of the R for Amazon portable.
+#' \dontrun{
+#' dir <- paste0(paste0("C:/Users/", Sys.getenv("USERNAME")), "/Documents/R/WD/RTW")
+#' setwd(dir)
+#' stationNames <- c("DLA7", "DPS1")
+#' weekStopFreq <- concatTables(stationNames, TRUE)
+#' }
 #' @export
 #' @md
-
 
 concatTables <- function(stations, viewTable=FALSE, writeFile=FALSE) {
 

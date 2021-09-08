@@ -14,8 +14,6 @@ This function manually removes all local variables and then sets the working dir
 it should be used if the library fails to import, or if issues are experienced running read_whole_folder
 }
 \examples{
-\code{NOTTRUN{}
-\code{   clear_all_and_set()}
-\code{}}
-
+\dontrun{clear_all_and_set()
+}
 }

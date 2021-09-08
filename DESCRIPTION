@@ -7,9 +7,9 @@ Authors@R: c(person("notsynonymous", "Declerk S.", email = "sam@engineer.com", r
 Maintainer: Samuel MDC <sam@engineer.com>
 URL: https://github.com/notsynonymous/SWA
 BugReports: https://github.com/notsynonymous/SWA/issues
-Description: SWA package for Amazon Metrics
-Depends: R (>= 4.1.1)
-Imports: readxl, roxygen2, devtools
+Description: This is an SWA package for Amazon Metrics.
+Depends: R (>= 4.1.0), readxl
+Imports: roxygen2, devtools, knitr
 Suggests: ggplot2
 License: MIT + file LICENSE
 Encoding: UTF-8

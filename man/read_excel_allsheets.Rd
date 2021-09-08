@@ -4,6 +4,9 @@
 \alias{read_excel_allsheets}
 \title{Reads a workbook to a multidimensional matrix
 This is a function to take a workbook and transform it into a multidimensional matrix. This function was created by Jeromy Anglim.}
+\usage{
+read_excel_allsheets(filename, tibble = FALSE)
+}
 \arguments{
 \item{filename}{a vector of type string and length 1 that takes the name of a file}
 
@@ -17,13 +20,10 @@ Reads a workbook to a multidimensional matrix
 This is a function to take a workbook and transform it into a multidimensional matrix. This function was created by Jeromy Anglim.
 }
 \examples{
-\code # set the current working directory to a folder with an XLS file in it
-\code # this code is in a block comment because it requires an XLS file
-\code # NOTRUN {
-\code #	setwd(PATH_TO_FOLDER)
-\code # }
-\code # read_excel_allshets(filename)
-\code # ls()
+\dontrun{
+setwd(PATH_TO_FOLDER)
+read_excel_allshets(filename)
+}
 }
 \author{
 Jeromy Anglim

@@ -4,10 +4,8 @@
 #' @name clear_all_and_set
 #'
 #' @examples
-#' \code{NOTTRUN{}
-#' \code{   clear_all_and_set()}
-#' \code{}}
-#'
+#' \dontrun{clear_all_and_set()
+#' }
 #' @export
 #' @md
 

@@ -8,14 +8,14 @@
 #' @returns None
 #' 
 #' @examples
-#' \code d1 <- c(1:5)
-#' \code d2 <- c(2:6)
-#' \code d3 <- c(3:7)
-#' \code mat <- cbind(d1, d2, d3)
-#' \code mat <- as.data.frame(mat)
-#' \code colnames(mat) <- c(1:3)
-#' \code rownames(mat) <- c(1:5)
-#' \code timeStampAndMove(mat, "SchmooooooNozzle")
+#' d1 <- c(1:5)
+#' d2 <- c(2:6)
+#' d3 <- c(3:7)
+#' mat <- cbind(d1, d2, d3)
+#' mat <- as.data.frame(mat)
+#' colnames(mat) <- c(1:3)
+#' rownames(mat) <- c(1:5)
+#' timeStampAndMove(mat, "SchmooooooNozzle")
 #' @export
 #' @md
 

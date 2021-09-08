@@ -10,8 +10,9 @@
 #' @seealso [SWA::read_whole_folder_RTW()]
 #'
 #' @examples
-#' \code DLA7.mat <- getTable("DLA7")
-#' \code DLA7.mat
+#' \dontrun{DLA7.mat <- getTable("DLA7")
+#' DLA7.mat
+#' }
 #' @export
 #' @md
 

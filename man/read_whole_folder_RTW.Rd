@@ -2,34 +2,29 @@
 % Please edit documentation in R/read_whole_folder_RTW.R
 \name{read_whole_folder_RTW}
 \alias{read_whole_folder_RTW}
-\title{Reads Manifests to Frequency Tablouse
-Takes a file of manifests and transforms it into a a stop frequency table. This is really interesting because it is likely one of the more useful things to ever happen to Jeff Bezos, and he's never really going to give a fuck about that.}
+\title{Reads Manifests to Frequency Table
+Takes a file of manifests and transforms it into a a stop frequency table.}
 \usage{
 read_whole_folder_RTW(files, ext, writeEachStation = FALSE)
 }
 \arguments{
 \item{files}{a vector of type string that contains the station name}
 
-\item{ext}{a vector object of length 1 that contains the object name extension -- this will also be passed to the filename along with a timestample.}
+\item{ext}{a vector object of length 1 that contains the object name extension -- this will also be passed to the filename along with a timestamp.}
+
+\item{writeEachStation}{a logical argument that will write individual fields for each station}
 }
 \value{
 None
 }
 \description{
-Reads Manifests to Frequency Tablouse
-Takes a file of manifests and transforms it into a a stop frequency table. This is really interesting because it is likely one of the more useful things to ever happen to Jeff Bezos, and he's never really going to give a fuck about that.
+Reads Manifests to Frequency Table
+Takes a file of manifests and transforms it into a a stop frequency table.
 }
 \examples{
-\code # 
-\code # set the current working directory to a folder with XLS files in it
-\code # this code is in a block comment because it requires a XLS files
-\code # NOTRUN {
-\code # setwd(PATH_TO_FOLDER)
-\code # fileNames <- list.files()
-\code # read_whole_folder_RTW(fileNames, "ALL")
-\code # ls()
-\code # }
+\dontrun{setwd(PATH_TO_FOLDER)
+fileNames <- list.files()
+read_whole_folder_RTW(fileNames, "ALL")
+ls()
 }
-\author{
-the Blousy Girl from accounts receivable
 }
