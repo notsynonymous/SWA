@@ -15,5 +15,4 @@ clear_all_and_set <- function(){
 	setwd(dir)
 	rm(dir) 
 	getwd()
-	library(readxl)
 }

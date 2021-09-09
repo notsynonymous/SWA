@@ -3,6 +3,8 @@
 #' 
 #' @name read_whole_folder_RTW
 #'
+#' @importFrom utils head write.csv
+#'
 #' @param files a vector of type string that contains the station name
 #' @param ext a vector object of length 1 that contains the object name extension -- this will also be passed to the filename along with a timestamp.
 #' @param writeEachStation a logical argument that will write individual fields for each station

@@ -4,6 +4,8 @@
 #'
 #' @author Jeromy Anglim
 #'
+#' @importFrom readxl excel_sheets read_excel
+#'
 #' @param filename a vector of type string and length 1 that takes the name of a file
 #' @param tibble a logical argument that uses tibbles instead of dataframes if set to TRUE
 #'
@@ -18,8 +20,8 @@
 #' @md
 
 read_excel_allsheets <- function(filename, tibble = FALSE) {
-    sheets <- readxl::excel_sheets(filename)
-    x <- lapply(sheets, function(X) readxl::read_excel(filename, sheet = X))
+    sheets <- excel_sheets(filename)
+    x <- lapply(sheets, function(X) read_excel(filename, sheet = X))
     if(!tibble) x <- lapply(x, as.data.frame)
     names(x) <- sheets
     x

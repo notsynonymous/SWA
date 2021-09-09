@@ -8,7 +8,7 @@ This function is mostly a DRY private function that helps generate the name of d
 name_func(index)
 }
 \arguments{
-\item{index}{A numeric vector of length 1 that takes an index. Intended to be used in loops for generating large batches of objects (like Anonymous, or any other fucking thing that I constantly have to avoid or move around)}
+\item{index}{A numeric vector of length 1 that takes an index. Intended to be used in loops for generating large batches of objects}
 }
 \value{
 None
