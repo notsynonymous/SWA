@@ -41,7 +41,6 @@ read_whole_folder_RTW <- function(files, ext, writeEachStation=FALSE) {
 		rm(i, tmp_obj, j, temp_length)
 	}		
 
-
 	freq.stops <- table(address)
 	Addresses <- names(freq.stops)
 
@@ -66,12 +65,12 @@ read_whole_folder_RTW <- function(files, ext, writeEachStation=FALSE) {
 	
 			tableName <- paste0(format(Sys.time(), "%H%M%S_"), paste0(Sys.Date(), paste0(ext, "_pkups.csv"))) 
 			write.csv(theTable, tableName) 
-
+				
 			file.copy(tableName, paste0(paste0("C:/Users/", Sys.getenv("USERNAME")), "/Documents/R/Data")) 
 			file.remove(tableName)
-			
+				
 		}
-	
+			
 		vec1 <- c(ext, "", "")
 		vec2 <- c("", "", "")
 		theTable <- as.matrix(rbind(vec1, theTable))

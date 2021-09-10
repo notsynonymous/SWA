@@ -8,12 +8,17 @@ Maintainer: Samuel MDC <sam@engineer.com>
 URL: https://github.com/notsynonymous/SWA
 BugReports: https://github.com/notsynonymous/SWA/issues
 Description: This is an SWA package for Amazon Metrics.
-Depends: R (>= 4.1.0), readxl, base, utils
-Imports: roxygen2, devtools, knitr
-Suggests: ggplot2
+Depends: R (>= 4.1.0), readxl, base, utils, stats
+Imports: 
+    roxygen2,
+    devtools,
+    knitr,
+    Rcpp
+Suggests: 
+    rmarkdown,
+    ggplot2
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.1.1
-VignetteBuilder: knitr
 Roxygen: list(markdown = TRUE)

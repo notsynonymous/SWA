@@ -1,6 +1,7 @@
 #' Concatenate frequency tables by station
 #' This function looks for particular character sets in a string pulled from the filename and reads them.
 #' It is used recursively with getTable and read_whole_folder_RTW, for more information, please refer to the documentation for those functions
+#'
 #' @name concatTables
 #' 
 #' @param stations a vector of type string containing the names of stations

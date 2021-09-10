@@ -1,6 +1,7 @@
 #' A getter that generates stop frequency matrix
 #' This function looks for particular character sets in a string pulled from the filename and reads them.
 #' It is used recursively with getTable and read_whole_folder_RTW, for more information, please refer to the documentation for those functions
+#'
 #' @name getTable
 #' 
 #' @param stationStr a single vector string
