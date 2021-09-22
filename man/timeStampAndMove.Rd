@@ -27,5 +27,5 @@ mat <- cbind(d1, d2, d3)
 mat <- as.data.frame(mat)
 colnames(mat) <- c(1:3)
 rownames(mat) <- c(1:5)
-timeStampAndMove(mat, "SchmooooooNozzle")
+timeStampAndMove(mat, "Omyjjiodi")
 }

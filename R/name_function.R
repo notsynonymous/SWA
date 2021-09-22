@@ -17,5 +17,5 @@
 #' @md
 
 name_func = function(index) {
-	paste0("dat", index)
+	paste0("SWA", index)
 }

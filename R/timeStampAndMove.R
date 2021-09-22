@@ -4,7 +4,7 @@
 #' 
 #' @param dataframe the name of the dataframe
 #' @param extension a really fun name
-#'
+#' 
 #' @returns None
 #' 
 #' @examples
@@ -15,7 +15,7 @@
 #' mat <- as.data.frame(mat)
 #' colnames(mat) <- c(1:3)
 #' rownames(mat) <- c(1:5)
-#' timeStampAndMove(mat, "SchmooooooNozzle")
+#' timeStampAndMove(mat, "Omyjjiodi")
 #' @export
 #' @md
 

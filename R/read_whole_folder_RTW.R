@@ -22,6 +22,8 @@
 
 read_whole_folder_RTW <- function(files, ext, writeEachStation=FALSE) {
 
+	setwd("C:/Users/sdeclerk/Documents/R/WD/RTW/")
+
 	tmp_obj <- NULL
 	address <- NULL
 	
