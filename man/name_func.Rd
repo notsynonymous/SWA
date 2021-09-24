@@ -20,8 +20,8 @@ This function is mostly a DRY private function that helps generate the name of d
 \examples{
 num <- c(1,2,3,4,5)
 for(i in 1:length(num)){
- 	
-	assign(name_func(i), i)
+
+		assign(name_func(i), i)
 }
 ls()
 }

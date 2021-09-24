@@ -2,6 +2,8 @@
 #' Route stops
 #' Takes a workbook and extracts the route stops
 #' 
+#' NOTE: I'm in one of those shitty programming moments where I need to copy and paste something 
+#'
 #' @name route
 #'
 #' @param stationName character vector of length 1 for the name of the station
@@ -15,10 +17,11 @@
 
 route <- function(stationName){
 
-	setwd("C:/Users/sdeclerk/Documents/R/WD/today")
+	dir <- paste0(paste0("C:/Users/", Sys.getenv("USERNAME")), "/Documents/R/WD/today")
+	setwd(dir)
 
 	stnFile <- list.files(pattern=c(stationName))[1]
-
+	
 	tmp_obj <- NULL
 	address <- NULL
 	
@@ -38,21 +41,27 @@ route <- function(stationName){
 		rm(tmp_obj2, address)
 		
 	}
+	
 	rm(tmp_obj, j, temp_length)
 	
+	dir <- paste0(paste0("C:/Users/", Sys.getenv("USERNAME")), "/Documents/R/WD/today/out")
+	setwd(dir)
+	
 	routes <- ls(pattern="SWA")	
-	print(" -----------------------------------------------------------------")
-	print(c("| Station ID: ", stationName))
-	print(" -----------------------------------------------------------------")
+	sink(paste0(stationName, ".txt"))
 	
 	for(i in 1:length(routes)){
 	
 		get(routes[i]) -> tmp
 		tmptn <- names(table(tmp))
 		tmptn <- tmptn[!tmptn %in% c("Actual Customer Address", "DPS1", "DLA7", "DXH6")]
-		print(paste0("SWA", i))
-		print(tmptn)
+		cat(paste0("SWA", i))
+		cat("\n")
+		cat(tmptn, sep="\n")
+		cat("\n")
 		rm(tmp, tmptn)
-		
+	
 	}
+	
+	sink()
 }

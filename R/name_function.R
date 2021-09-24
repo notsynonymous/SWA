@@ -3,14 +3,14 @@
 #' @name name_func
 #' 
 #' @param index A numeric vector of length 1 that takes an index. Intended to be used in loops for generating large batches of objects
-#'
+#' 
 #' @returns None
 #' 
 #' @examples
 #' num <- c(1,2,3,4,5)
 #' for(i in 1:length(num)){
-#'  	
-#' 	assign(name_func(i), i)
+#' 
+#' 		assign(name_func(i), i)
 #' }
 #' ls()
 #' @export

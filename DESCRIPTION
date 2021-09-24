@@ -1,7 +1,7 @@
 Package: SWA
 Type: Package
 Title: A package to assist in devloping SEM metrics based on driver data
-Version: 0.1
+Version: 1.1
 Date: 2021-09-01
 Authors@R: c(person("notsynonymous", "Declerk S.", email = "sam@engineer.com", role = c("cre","aut")))
 Maintainer: Samuel MDC <sam@engineer.com>

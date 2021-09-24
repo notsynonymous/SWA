@@ -12,9 +12,7 @@ route(stationName)
 \item{stationName}{character vector of length 1 for the name of the station}
 }
 \description{
-Adresses in route
-Route stops
-Takes a workbook and extracts the route stops
+NOTE: I'm in one of those shitty programming moments where I need to copy and paste something
 }
 \examples{
 \dontrun{
