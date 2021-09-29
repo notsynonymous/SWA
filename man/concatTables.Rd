@@ -2,9 +2,7 @@
 % Please edit documentation in R/concatTables.R
 \name{concatTables}
 \alias{concatTables}
-\title{Concatenate frequency tables by station
-This function looks for particular character sets in a string pulled from the filename and reads them.
-It is used recursively with getTable and read_whole_folder_RTW, for more information, please refer to the documentation for those functions}
+\title{Concatenate frequency tables by station}
 \usage{
 concatTables(stations, viewTable = FALSE, writeFile = FALSE)
 }
@@ -19,7 +17,6 @@ concatTables(stations, viewTable = FALSE, writeFile = FALSE)
 dataframe of generated stop frequency by station
 }
 \description{
-Concatenate frequency tables by station
 This function looks for particular character sets in a string pulled from the filename and reads them.
 It is used recursively with getTable and read_whole_folder_RTW, for more information, please refer to the documentation for those functions
 }

@@ -2,8 +2,7 @@
 % Please edit documentation in R/read_whole_folder_RTW.R
 \name{read_whole_folder_RTW}
 \alias{read_whole_folder_RTW}
-\title{Reads Manifests to Frequency Table
-Takes a file of manifests and transforms it into a a stop frequency table.}
+\title{Reads Manifests to Frequency Table}
 \usage{
 read_whole_folder_RTW(files, ext, writeEachStation = FALSE)
 }
@@ -18,7 +17,6 @@ read_whole_folder_RTW(files, ext, writeEachStation = FALSE)
 None
 }
 \description{
-Reads Manifests to Frequency Table
 Takes a file of manifests and transforms it into a a stop frequency table.
 }
 \examples{

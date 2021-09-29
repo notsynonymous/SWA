@@ -2,27 +2,26 @@
 % Please edit documentation in R/fl.R
 \name{fl}
 \alias{fl}
-\title{The worlds simplest travese function of all time
-It takes and integer and returns the file history cache.
-This function will eventually be used with the search function of Motherfucking Automation}
+\title{The worlds simplest travese function of all time.}
 \usage{
-fl(up = 0)
+fl(up = 0, pat)
 }
 \arguments{
 \item{up}{takes an integer and traverses up the number of levels}
+
+\item{pat}{a character vector containing a shortened string of a folder to traverse into}
 }
 \value{
 folderHist a cache of folders that were traverves in order to traverse back down
 }
 \description{
-The worlds simplest travese function of all time
-It takes and integer and returns the file history cache.
+It takes an integer and returns the file history cache.
 This function will eventually be used with the search function of Motherfucking Automation
 }
 \examples{
 \dontrun{
 getwd()
-tr <- fl(2)
+tr <- fl(2,)
 tr
 setwd(tr[1])
 }

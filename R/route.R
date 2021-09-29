@@ -1,10 +1,13 @@
 #' Adresses in route
+#'
 #' Route stops
 #' Takes a workbook and extracts the route stops
 #' 
-#' NOTE: I'm in one of those shitty programming moments where I need to copy and paste something 
+#' This function may be ammended with fl
 #'
 #' @name route
+#'
+#' @importFrom gtools mixedsort
 #'
 #' @param stationName character vector of length 1 for the name of the station
 #'
@@ -16,10 +19,10 @@
 #' @md
 
 route <- function(stationName){
-
+	
 	dir <- paste0(paste0("C:/Users/", Sys.getenv("USERNAME")), "/Documents/R/WD/today")
 	setwd(dir)
-
+	
 	stnFile <- list.files(pattern=c(stationName))[1]
 	
 	tmp_obj <- NULL
@@ -47,7 +50,8 @@ route <- function(stationName){
 	dir <- paste0(paste0("C:/Users/", Sys.getenv("USERNAME")), "/Documents/R/WD/today/out")
 	setwd(dir)
 	
-	routes <- ls(pattern="SWA")	
+	routes <- ls(pattern="SWA")
+	routes <- mixedsort(routes)
 	sink(paste0(stationName, ".txt"))
 	
 	for(i in 1:length(routes)){

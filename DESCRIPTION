@@ -1,14 +1,14 @@
 Package: SWA
 Type: Package
 Title: A package to assist in devloping SEM metrics based on driver data
-Version: 1.2
+Version: 1.3
 Date: 2021-09-01
 Authors@R: c(person("notsynonymous", "Declerk S.", email = "sam@engineer.com", role = c("cre","aut")))
 Maintainer: Samuel MDC <sam@engineer.com>
 URL: https://github.com/notsynonymous/SWA
 BugReports: https://github.com/notsynonymous/SWA/issues
 Description: This is an SWA package for Amazon Metrics.
-Depends: R (>= 4.1.0), readxl, base, utils, stats
+Depends: R (>= 4.1.0), readxl, base, utils, stats, gtools
 Imports: 
     roxygen2,
     devtools,

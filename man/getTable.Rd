@@ -2,9 +2,7 @@
 % Please edit documentation in R/getTable.R
 \name{getTable}
 \alias{getTable}
-\title{A getter that generates stop frequency matrix
-This function looks for particular character sets in a string pulled from the filename and reads them.
-It is used recursively with getTable and read_whole_folder_RTW, for more information, please refer to the documentation for those functions}
+\title{A getter that generates stop frequency matrix}
 \usage{
 getTable(stationStr)
 }
@@ -15,7 +13,6 @@ getTable(stationStr)
 a matrix that contains the vector string token in the filename
 }
 \description{
-A getter that generates stop frequency matrix
 This function looks for particular character sets in a string pulled from the filename and reads them.
 It is used recursively with getTable and read_whole_folder_RTW, for more information, please refer to the documentation for those functions
 }

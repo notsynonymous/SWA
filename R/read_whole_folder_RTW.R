@@ -1,4 +1,5 @@
 #' Reads Manifests to Frequency Table
+#'
 #' Takes a file of manifests and transforms it into a a stop frequency table. 
 #' 
 #' @name read_whole_folder_RTW
@@ -67,7 +68,7 @@ read_whole_folder_RTW <- function(files, ext, writeEachStation=FALSE) {
 	
 			tableName <- paste0(format(Sys.time(), "%H%M%S_"), paste0(Sys.Date(), paste0(ext, "_pkups.csv"))) 
 			write.csv(theTable, tableName) 
-				
+			
 			file.copy(tableName, paste0(paste0("C:/Users/", Sys.getenv("USERNAME")), "/Documents/R/Data")) 
 			file.remove(tableName)
 				
