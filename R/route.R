@@ -20,8 +20,7 @@
 
 route <- function(stationName){
 	
-	dir <- paste0(paste0("C:/Users/", Sys.getenv("USERNAME")), "/Documents/R/WD/today")
-	setwd(dir)
+	setwd("C:/Users/sdeclerk/Documents/R/WD/RTW/")
 	
 	stnFile <- list.files(pattern=c(stationName))[1]
 	
@@ -47,12 +46,15 @@ route <- function(stationName){
 	
 	rm(tmp_obj, j, temp_length)
 	
-	dir <- paste0(paste0("C:/Users/", Sys.getenv("USERNAME")), "/Documents/R/WD/today/out")
-	setwd(dir)
+	setwd("C:/Users/sdeclerk/Documents/R/Data")
 	
 	routes <- ls(pattern="SWA")
 	routes <- mixedsort(routes)
 	sink(paste0(stationName, ".txt"))
+	
+	cat(stationName)
+	cat("\n")
+	cat("-----------------------------------------------------", sep="\n")
 	
 	for(i in 1:length(routes)){
 	
@@ -68,4 +70,14 @@ route <- function(stationName){
 	}
 	
 	sink()
+	
+	#for dev {
+	
+		setwd("C:/Users/sdeclerk/Documents/R/pkg/SWA")
+		
+	# {
+	#		the idea behind the fl traverse function was to have a very simple function that
+	#			caches folder history. There is likely a way to implement this a generic.
+	#			WORK SMARTER NOT HARDER. OR BOTH IF YOURE A MANIAC!
+	
 }

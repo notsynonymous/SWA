@@ -62,6 +62,7 @@ read_whole_folder_RTW <- function(files, ext, writeEachStation=FALSE) {
 		theTable <- head(theTable, -1) 
 		PkupPercent <- c(round(prop.table(head(N_pickups, -2))*100,2)) 
 		PkupPercent <- append(PkupPercent, sum(PkupPercent)) 
+		PkupPercent <- as.numeric(PkupPercent)
 		theTable <- cbind(theTable, PkupPercent) 
 		
 		if(writeEachStation){

@@ -24,26 +24,34 @@
 
 fl <- function(up=0, pat) {
 
-	if(missing(pat)){
+	if(missing(pat)) {
 
 		folderHist <- getwd()
 		
 		if(up >=1) {
-			for(i in 1:up){
+			for(i in 1:up) {
 				folderHist <- append(folderHist, getwd())
 				setwd("..")
 			}
 		}
 		folderHist <- tail(folderHist, -1)
 	}
-	if(missing(up)){
+	if(missing(up)) {
+	
 		folderHist <- getwd()
 		folder <- list.files(pattern=pat)
-		if(length(folder > 1)){
+		
+		if(length(folder > 1)) {
+			
 			setwd(folder[1])
+			
 		} else {
+			
 			setwd(folder)
+			
 		}
 	}
+	
 	return(folderHist)
+	
 }
